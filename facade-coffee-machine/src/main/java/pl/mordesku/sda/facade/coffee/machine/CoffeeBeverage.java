@@ -20,8 +20,18 @@ public class CoffeeBeverage {
 
     @Override
     public String toString() {
+        String input = "sdfsdfsdfsdf";
+        boolean x = isX(input);
+        if (x) {
+            System.out.println("sdfsdf");
+        }
         return "CoffeeBeverage{" +
                 "ingredients=" + ingredients +
                 '}';
+    }
+
+    private boolean isX(String input) {
+        String test = new String(input);
+        return test.contains("x");
     }
 }
